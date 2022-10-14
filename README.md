@@ -4,6 +4,7 @@
 # Week06
 
 ## (1) 考試 : 九九乘法表
+考前複習、考後檢討
 ```cpp
 
 #include <stdio.h>
@@ -22,6 +23,7 @@ int main()
 
 ```
 ## (2) 主題 : 畫星星(2層迴圈)
+技巧 : 建立鷹架排版
 ```cpp
 #include <stdio.h>
 
@@ -45,6 +47,7 @@ int main()
 
 ```
 ## (3) 主題 : 最大公因數-暴力法
+利用電腦一個一個試
 ```cpp
 #include <stdio.h>
 
@@ -62,6 +65,7 @@ int main()
 
 ```
 ## (4) 主題 : 輾轉相除法
+利用輾轉相除法的概念設計程式
 ```cpp
 #include <stdio.h>
 
