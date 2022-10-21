@@ -123,5 +123,26 @@ int main()
     long long int a = 1234567812345678;
     printf("%lld\n",a); /// 小寫 LLD
 }
-'''
+```
+## (3) 主題 : 最大公因數
+技巧 : long long int 暴力拆解法
+```cpp
+#include <stdio.h>
 
+int main()
+{
+    printf("請輸入兩個數字: ");
+    long long int a,b,ans;
+    scanf("%lld %lld",&a,&b);
+    for (long long int i =1;i<=a;i++)
+    {
+        if(a%i==0 && b%i==0) ans=i;
+    }
+    printf("答案是 : %lld ",ans);
+}
+```
+## (4) 主題 : 最大公因數
+技巧 : 
+```cpp
+
+```
