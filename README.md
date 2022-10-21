@@ -142,6 +142,28 @@ int main()
 }
 ```
 ## (4) 主題 : 最大公因數
+技巧 : long long int 輾轉相除法
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    long long int a,b,c;
+    printf("請輸入 2 個數字: ");
+    scanf("%lld%lld",&a,&b);
+
+    while(1)
+    {
+        c = a%b;
+        printf("a: %lld b: %lld c: %lld\n",a,b,c);
+        if(c == 0) break;
+        a=b;
+        b=c;
+    }
+    printf("答案是: %lld",b);
+}
+```
+## (5) 主題 : 
 技巧 : 
 ```cpp
 
