@@ -89,3 +89,39 @@ int main()
 ```
 
 # Week07
+
+## (1) 考試 : 九九乘法表
+考前複習、考後檢討
+```cpp
+
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for (int i = 1; i <= n;i++)
+	{
+		int space = n-i,star=2n-1;
+		for (int j = 0 ; j < space; j++) printf(" ");
+		for (int j = 0 ; j < star; j++) printf("*");
+		printf("\n");
+	}
+}
+
+```
+## (2) 主題 : 畫星星(2層迴圈)
+技巧 : long long int
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int n = 1234567812345678;
+    printf("%d\n",n);
+
+    long long int a = 1234567812345678;
+    printf("%lld\n",a); /// 小寫 LLD
+}
+'''
+
