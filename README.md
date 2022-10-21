@@ -160,11 +160,24 @@ int main()
         a=b;
         b=c;
     }
-    printf("答案是: %lld",b);
+    printf("答案是: %lld\n",b);
 }
 ```
-## (5) 主題 : 
-技巧 : 
+## (5) 主題 : 剝皮法(10進位)
+技巧 : 剝皮法
 ```cpp
+#include <stdio.h>
 
+int main()
+{
+    printf("請輸入一個數字 : ");
+    int n ;
+    scanf("%d",&n);
+
+    while(n>0)
+    {
+        printf("%d\n",n%10);
+        n = n/10;
+    }
+}
 ```
