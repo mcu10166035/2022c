@@ -90,7 +90,7 @@ int main()
 
 # Week07
 
-## (1) 考試 : 九九乘法表
+## (1) 考試 : 畫星星(金字塔)
 考前複習、考後檢討
 ```cpp
 
@@ -110,7 +110,7 @@ int main()
 }
 
 ```
-## (2) 主題 : 畫星星(2層迴圈)
+## (2) 主題 : long long int 各種類別
 技巧 : long long int
 ```cpp
 #include <stdio.h>
