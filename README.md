@@ -230,8 +230,39 @@ int main()
 }
 ```
 
-## (2) 主題 : while 迴圈金字塔
+## (3) 主題 : while 迴圈金字塔
 技巧 : 2個 while
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    int i = 0;
+    while(i<n)
+    {
+        int k = 0;
+        while(k<n)
+        {
+            if (k<n-i-1) printf(" ");
+            else printf("*");
+            k++;
+        }
+        printf("\n");
+        i++;
+    }
+}
+
+```
+## (4) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (5) 主題 :
+技巧 : 
 ```cpp
 
 ```
