@@ -181,3 +181,57 @@ int main()
     }
 }
 ```
+# Week08
+
+## (1) 考試 : 最大公因數-輾轉相除法
+考前複習、考後檢討
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c ;
+    scanf("%d%d",&a,&b);
+
+    while(1)
+    {
+        c =a%b;
+	if (c==0) break;
+	a=b;
+	b=c;
+    }
+    printf("%d",b);
+}
+
+```
+
+## (2) 主題 : for迴圈金字塔
+技巧 : 2個 for
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    for (int i =1;i<=n;i++)
+    {
+        for (int k =1;k<=n;k++)
+        {
+            if (k<= n-i)
+            {
+                printf(" ");
+            }
+            else printf("*");
+        }
+        printf("\n");
+    }
+}
+```
+
+## (2) 主題 : while 迴圈金字塔
+技巧 : 2個 while
+```cpp
+
+```
