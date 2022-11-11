@@ -339,6 +339,48 @@ int main()
 }
 
 ```
+## (3) 主題 : 陣列-倒著印
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[4] = {10,20,30,40};
+    for(int i=0;i<4;i++)
+    {
+        printf("a[%d]:%d\n",i,a[i]);
+    }
+    for(int i=3;i>=0;i--)
+    {
+        printf("%d ",a[i]);
+    }
+}
+
+```
+## (3) 主題 : 輸入 100 個數字，並倒著列出來
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	int a[100];
+	for (int i=0;i<100;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for (int i=99;i>=0;i--)
+	{
+		printf("%d\n",a[i]);
+	} 
+}
+```
+## (3) 主題 : 篩子法
+技巧 : 
+```cpp
+
+```
 ## (3) 主題 :
 技巧 : 
 ```cpp
