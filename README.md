@@ -611,8 +611,8 @@ int main()
 
 ```
 
-## (6) 主題 : 百數排列2
-技巧 : 
+## (6) 主題 : 百數排列3
+技巧 : 泡泡排序法 Bubble sort
 ```cpp
 #include <stdio.h>
 
