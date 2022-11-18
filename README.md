@@ -400,22 +400,258 @@ int main()
 }
 
 ```
-## (2) 主題 : 篩子法
+## (2) 主題 : 三數排列
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a =90,b=80;
+
+    printf("a:%d b:%d\n",a,b);
+
+    int temp =a;
+    a =b ;
+    b =temp;
+
+    printf("a:%d b:%d\n",a,b);
+}
+
+```
+## (3) 主題 : 三數排列2
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a =90,b=80,c =70;
+
+    if (a>b)
+    {
+        int temp =a;
+        a =b ;
+        b =temp;
+    }
+    if (b>c)
+    {
+        int temp =b;
+        b =c ;
+        c =temp;
+    }
+    if (a>b)
+    {
+        int temp =a;
+        a =b ;
+        b =temp;
+    }
+
+    printf("a:%d b:%d c:%d\n",a,b,c);
+}
+
+```
+## (4) 主題 : 百數排列
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[10]={90,80,70,60,50,40,30,20,10,0};
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+}
+
+```
+## (5) 主題 : 百數排列2
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[10]={90,80,70,60,50,40,30,20,10,0};
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int i=0;i<10-1;i++)
+    {
+        if (a[i]>a[i+1])
+        {
+            int temp =a[i];
+            a[i] = a[i+1];
+            a[i+1] = temp;
+        }
+    }
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+}
+
+```
+
+## (6) 主題 : 百數排列3
+技巧 : 泡泡排序法 Bubble sort
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[10]={90,80,70,60,50,40,30,20,10,0};
+    for (int i=0;i<10;i++) printf("%d ",a[i]);
+    printf("\n");
+    for (int k=0;k<10-1;k++)
+    {
+        for (int i=0;i<10-1;i++)
+        {
+            if (a[i]>a[i+1])
+            {
+                int temp =a[i];
+                a[i] = a[i+1];
+                a[i+1] = temp;
+            }
+        }
+
+        for (int i=0;i<10;i++) printf("%d ",a[i]);
+        printf("\n");
+    }
+}
+```
+
+# Week12
+
+## (1) 考試 : 百數反印
+考前複習、考後檢討
+```cpp
+
+```
+## (2) 主題 : 
 技巧 : 
 ```cpp
 
 ```
-## (3) 主題 : 篩子法
-技巧 : 
-```cpp
-
-```
-## (4) 主題 : 篩子法
-技巧 : 
-```cpp
-
-```
-## (5) 主題 : 篩子法
+## (3) 主題 : 
 技巧 : 
 ```cpp
 
