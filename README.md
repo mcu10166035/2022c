@@ -796,6 +796,8 @@ int main()
 ## (1) 考試 : 矩陣加法
 考前複習、考後檢討
 ```cpp
+#include <stdio.h>
+
 int main()
 {
     int a[10][10],b[10][10],c[10][10];
