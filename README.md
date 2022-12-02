@@ -882,14 +882,45 @@ int main()
 }
 
 ```
-## (4) 主題 : 
+## (4) 主題 : 矩陣轉180 
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[200][200];
+    int n,m;
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i=n-1;i>=0;i--){
+        for(int j=m-1;j>=0;j--){
+            printf("%2d ",a[i][j]);
+        }
+        printf("\n");
+    }
+}
 
 ```
-## (5) 主題 : 
+## (5) 主題 : Function 函式
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int addnum(int a,int b)
+{
+    return a+b;
+}
+int main()
+{
+    int ans = addnum(2,3);
+    printf("addnum(2,3) 會得到 %d\n",ans);
+}
 
 ```
 # Week14
