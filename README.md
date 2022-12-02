@@ -832,14 +832,54 @@ int main()
 }
 
 ```
-## (2) 主題 : 
-技巧 : 
+## (2) 主題 : 股票最佳買點與賣點-瘋狂程設題目
+技巧 : 左手i右手j
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[100];
+    for (int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+
+    int left,right;
+    int ans=-99999;
+    for (int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if (a[j]-a[i]>ans){
+                ans=a[j]-a[i];
+                left = a[i];
+                right=a[j];
+            }
+        }
+    }
+    printf("請按任意鍵繼續...\n");
+    printf("最大利潤=%d-%d=%d\n",right,left,ans);
+}
 
 ```
-## (3) 主題 : 
+## (3) 主題 : A4白紙/黃金比例/Fibonacci數列
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a[50];
+    a[0]=0;
+    a[1]=1;
+
+    for(int i=2;i<45;i++){
+        a[i]=a[i-1]+a[i-2];
+    }
+    for(int i=0;i<45;i++){
+        printf("%d ",a[i]);
+    }
+}
 
 ```
 ## (4) 主題 : 
