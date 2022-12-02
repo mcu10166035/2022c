@@ -793,6 +793,65 @@ int main()
 
 # Week13
 
+## (1) 考試 : 矩陣加法
+考前複習、考後檢討
+```cpp
+int main()
+{
+    int a[10][10],b[10][10],c[10][10];
+
+    int n,m;
+
+    scanf("%d%d",&n,&m);
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            scanf("%d",a[i][j]);
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            scanf("%d",b[i][j]);
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            c[i][j]=a[i][j]+b[i][j];
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d",c[i][j]);
+        }
+    }
+}
+
+```
+## (2) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (3) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (4) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (5) 主題 : 
+技巧 : 
+```cpp
+
+```
+# Week14
+
 ## (1) 考試 : 
 考前複習、考後檢討
 ```cpp
