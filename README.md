@@ -944,22 +944,124 @@ int main()
     }
 }
 ```
-## (2) 主題 : 
-技巧 : 
+## (2) 主題 : 函式
+技巧 : 宣告、定義、使用呼叫、參數、return
 ```cpp
+#include <stdio.h>
+
+int a=10;
+
+void func()
+{
+    a=30;
+    printf("func()中 a 改成 : %d\n",a);
+}
+int main()
+{
+    printf("func()中 a 是 : %d\n",a);
+    func();
+    printf("func()中 a 是 : %d\n",a);
+}
 
 ```
-## (3) 主題 : 
-技巧 : 
+## (3) 主題 : 函式
+技巧 : Global、local 參數
 ```cpp
+#include <stdio.h>
+
+int a=10;
+
+void func()
+{
+    int a=20;
+    printf("func()裡的 a 是 : %d\n",a);
+    a=30;
+    printf("func()中 a 改成 : %d\n",a);
+}
+int main()
+{
+    printf("func()中 a 是 : %d\n",a);
+    func();
+    printf("func()中 a 是 : %d\n",a);
+}
 
 ```
-## (4) 主題 : 
+## (4) 主題 : 函式
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int n =30;
+
+int funA(int a,int b)
+{
+    printf("funA()的 a,b 是 : %d %d\n",a,b);
+    return a+b;
+}
+
+int funB(int n)
+{
+    printf("funB()的 n 是 : %d\n",n);
+    int ans=funA(n,n);
+    return ans;
+}
+
+int main()
+{
+    int a=10,b=20;
+    funB(b);
+    funA(a,b);
+    printf("main()的 a,b 是 : %d %d\n",a,b);
+}
 
 ```
-## (5) 主題 : 
+## (5) 主題 : 輾轉相除法
+技巧 : 
+```cpp
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int c;
+
+    while(1){
+        c =a%b;
+        if (c==0) break;
+        a=b;
+        b=c;
+    }
+
+    int ans = b;
+    printf("%d",ans);
+}
+
+```
+## (6) 主題 : 函式(輾轉相除法)
+技巧 : 函式呼叫函式
+```cpp
+#include <stdio.h>
+
+int gcd(int a,int b)
+{
+    if (a==0) return b;
+    if (b==0) return a;
+
+    return gcd(b,a%b);
+}
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+
+    int ans = gcd(a,b);
+    printf("%d",ans);
+}
+
+```
+## (7) 主題 : 
 技巧 : 
 ```cpp
 
