@@ -1061,21 +1061,47 @@ int main()
 }
 
 ```
-## (7) 主題 : 
-技巧 : 
-```cpp
 
-```
 # Week15
 
-## (1) 考試 : 
+## (1) 考試 : GCD函式
 考前複習、考後檢討
 ```cpp
+#include <stdio.h>
+
+int gcd(int a,int b)
+{
+    if (a==0) return b;
+    if (b==0) return a;
+
+    return gcd(b,a%b);
+}
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+
+    int ans = gcd(a,b);
+    printf("%d",ans);
+}
 
 ```
-## (2) 主題 : 
+## (2) 主題 : 字串
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World\n");
+
+    char line[100]="Hello World";
+
+    printf("整數 %d\n",100);
+    printf("浮點數 %f\n",3.1415926535);
+    printf("%s 字串\n",line);
+}
 
 ```
 ## (3) 主題 : 
