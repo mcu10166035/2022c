@@ -1104,17 +1104,60 @@ int main()
 }
 
 ```
-## (3) 主題 : 
+## (3) 主題 : ASCII介紹
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    printf("%c : %d\n",65,65);
+    printf("%c : %d\n",66,66);
+    printf("%c : %d\n",67,67);
+    printf("%c : %d\n",'A','A');
+    printf("%c : %d\n",'B','B');
+    printf("%c : %d\n",'C','C');
+    printf("上面用數字 65 及單引號'a' 的結果一致\n");
+    printf("%c : %d\n",97,97);
+    printf("%c : %d\n",'a','a');
+}
 
 ```
-## (4) 主題 : 
+## (4) 主題 : 特殊字元 && 字串陣列
 技巧 : 
 ```cpp
+#include <stdio.h>
+
+int main()
+{
+    printf("=%c  = %d =\n",65,65);
+    printf("=%c  = %d =\n",'+','+');
+    printf("=%c  = %d =\n",'\n','\n');
+    printf("=%c  = %d =\n",'\t','\t');
+    printf("=%c  = %d =\n",'\0','\0');
+
+    char line[] ="Hello World AAA";
+
+    for (int i=0; ;i++){
+        char c =line[i];
+        if (c==0) break;
+        printf("= %c ",c);
+    }
+
+}
 
 ```
 ## (5) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (6) 主題 : 
+技巧 : 
+```cpp
+
+```
+## (7) 主題 : 
 技巧 : 
 ```cpp
 
