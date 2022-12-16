@@ -1143,22 +1143,42 @@ int main()
         if (c==0) break;
         printf("= %c ",c);
     }
+}
+```
+## (5) 主題 : 字串反印
+技巧 : 
+```cpp
+#include <stdio.h>
 
+char line[3000];
+
+int main()
+{
+    printf("請輸入一串字母，不要有空格: ");
+    scanf("%s",line);
+
+    int n=0;
+    for (int i=0;line[i]!=0;i++){
+        n++;
+    }
+    for (int i= n-1;i>=0;i--){
+        printf("%c",line[i]);
+    }
 }
 
 ```
-## (5) 主題 : 
-技巧 : 
+
+# Week16
+
+## (1) 考試 : 
+考前複習、考後檢討
 ```cpp
 
 ```
-## (6) 主題 : 
+
+## (2) 主題 : 
 技巧 : 
 ```cpp
 
-```
-## (7) 主題 : 
-技巧 : 
-```cpp
 
 ```
